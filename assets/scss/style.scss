@@ -1,0 +1,162 @@
+@import "main";
+
+header {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  background: #5b5b5b;
+
+  .header-contact-item {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "icon text" "icon number";
+    span {
+      color: #fff;
+      line-height: 1;
+
+      &:nth-of-type(1) {
+        grid-area: icon;
+      }
+
+      &:nth-of-type(2) {
+        grid-area: text;
+        opacity: 0.5;
+        font-size: 0.7em;
+      }
+
+      &:nth-of-type(3) {
+        grid-area: number;
+      }
+    }
+  }
+}
+
+nav {
+  background: #fff;
+  height: 50px;
+  position: relative;
+  z-index: 3;
+
+  > ul {
+    list-style: none;
+    display: flex;
+    > li {
+      position: relative;
+      > a {
+        color: #111;
+        display: block;
+        padding: 15px;
+        font-weight: 500;
+        transition: all 0.3s linear;
+
+        &:hover {
+          background: $primary-color;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.slider {
+  margin-top: -220px;
+}
+
+.product-box {
+  border: 1px solid #bebebe;
+
+  .product-name {
+    font-weight: bold;
+  }
+
+  .product-price {
+    color: #e0922e;
+  }
+
+  a {
+    background: #e0922e;
+    color: #fff;
+    padding: 7px 20px;
+    margin-top: 15px;
+    display: inline-block;
+    transition: all 0.3s linear;
+    font-family: "Roboto Condensed";
+    text-transform: uppercase;
+    font-size: 14px;
+
+    &:hover {
+      text-decoration: none;
+      background: #444444;
+    }
+  }
+}
+
+footer {
+  * {
+    color: #fff;
+  }
+  background: rgb(224, 146, 46);
+  background: linear-gradient(
+    270deg,
+    rgba(224, 146, 46, 1) 0%,
+    rgba(255, 195, 41, 1) 100%
+  );
+  .footer-title {
+    .footer-sup-title {
+      font-family: "Roboto Condensed";
+      color: #fff;
+      position: relative;
+      display: block;
+      text-transform: uppercase;
+
+      &:before {
+        content: "";
+        height: 2px;
+        width: 50px;
+        left: 0;
+        top: -5px;
+        position: relative;
+        background: #fff;
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
+
+    .footer-main-title {
+      font-weight: bold;
+      color: #444;
+      font-size: 16px;
+    }
+  }
+}
+
+.footer-bottom {
+  background: #444444;
+  color: #cacaca;
+}
+/*------------------------------------*\
+    RESPONSIVE
+\*------------------------------------*/
+
+@media only screen and (min-width: 320px) {
+}
+
+@media only screen and (min-width: 480px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (min-width: 1140px) {
+}
+
+@media only screen and (min-width: 1280px) {
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-resolution: 144dpi) {
+}
