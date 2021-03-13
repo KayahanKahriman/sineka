@@ -1,6 +1,6 @@
 @import "main";
 
-header {
+.desktop-header header {
   position: relative;
   z-index: 3;
   width: 100%;
@@ -42,17 +42,57 @@ nav {
     list-style: none;
     display: flex;
     > li {
+      transition: all 0.3s linear;
       position: relative;
+
+      &:hover {
+        background: $primary-color;
+        color: #fff;
+
+        > a {
+          color: #fff;
+        }
+      }
+
+      &:hover > ul {
+        opacity: 1;
+        visibility: visible;
+      }
+
       > a {
         color: #111;
         display: block;
-        padding: 15px;
+        padding: 18px 15px;
         font-weight: 500;
+        transition: all 0.3s linear;
+        border-right: 1px solid #00000010;
+      }
+    }
+  }
+
+  > ul > li > ul {
+    position: absolute;
+    top: 60px;
+    width: 250px;
+    background: #5b5b5b;
+    left: 0;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s linear;
+
+    > li {
+      a {
+        font-size: 14px;
+        color: #fff;
+        border-bottom: 1px solid #ffffff20;
+        display: block;
+        padding: 10px 15px;
         transition: all 0.3s linear;
 
         &:hover {
-          background: $primary-color;
           color: #fff;
+          background: #3a3a3a;
         }
       }
     }
@@ -61,6 +101,9 @@ nav {
 
 .slider {
   margin-top: var(--slider-margin-top);
+}
+
+.search-form {
 }
 
 .cart-button {
@@ -204,6 +247,61 @@ footer {
   background: #444444;
   color: #cacaca;
 }
+
+#search-form-wrapper {
+  background: $primary-color;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s linear;
+
+  form {
+    border-bottom: 2px solid #000;
+    [type="text"] {
+      background: transparent;
+      padding: 15px 0;
+      border: 0;
+      outline: 0;
+    }
+
+    ::placeholder {
+      color: #000;
+      opacity: 1;
+    }
+  }
+}
+
+.show-search-form {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: scale(1) !important;
+}
+
+.close-search-form {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  line-height: 0;
+  cursor: pointer;
+}
+
 /*------------------------------------*\
     RESPONSIVE
 \*------------------------------------*/
