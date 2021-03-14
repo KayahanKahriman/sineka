@@ -267,11 +267,18 @@ footer {
 
   form {
     border-bottom: 2px solid #000;
+    background: transparent;
+    padding: 0;
     [type="text"] {
       background: transparent;
       padding: 15px 0;
       border: 0;
       outline: 0;
+    }
+
+    [type="image"] {
+      width: 50px;
+      border: 0;
     }
 
     ::placeholder {
@@ -326,7 +333,7 @@ footer {
   }
 }
 
-#contact-form {
+form {
   background: #f9f9f9;
   padding: 15px;
   input:not([type="submit"]),
@@ -340,6 +347,11 @@ footer {
     color: #fff;
     padding: 15px 30px;
     border: 0;
+    transition: all 0.3s linear;
+
+    &:hover {
+      background: $text-color;
+    }
   }
 }
 
