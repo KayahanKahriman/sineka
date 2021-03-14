@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta charset="utf-8" />
     <title>Başlık</title>
-    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
 </head>
 
@@ -94,86 +93,63 @@
 
     <section class="content-wrapper">
         <div class="container my-5">
-            <div class="row align-items-center">
-                <div class="col-12 mb-4">
-                    <div class="section-title">
-                        <h2><span>İletişim</span></h2>
+            <div class="row">
+
+                <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                    <strong class="mb-2 d-inline-block">Giriş Yap</strong>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque libero metus</p>
+                    <div id="login-form">
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <input type="text" placeholder="Kullanıcı Adınız">
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <input type="password" placeholder="Şifreniz">
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 col-12 text-left">
+                                    <div class="styled-checkbox">
+                                        <input id="remember-me" type="checkbox">
+                                        <label for="remember-me">Beni Hatırla</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 text-right">
+                                    <input type="submit" value="Giriş Yap">
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div class="col-lg-3 col-12 mb-5 mb-lg-0 text-center">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-home"></i>
-                        </div>
-                        <div class="contact-content">
-                            <strong>Adres</strong>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        </div>
+                <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                    <strong class="mb-2 d-inline-block">Üye Ol</strong>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque libero metus</p>
+                    <div id="register-form">
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <input type="text" placeholder="Adınız Soyadınız">
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <input type="email" placeholder="Emailiniz">
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <input type="text" placeholder="Kullanıcı Adınız">
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <input type="password" placeholder="Şifreniz">
+                                </div>
+                                <div class="col-12 text-right">
+                                    <input type="submit" value="Üye Ol">
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div class="col-lg-3 col-12 mb-5 mb-lg-0 text-center">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-content">
-                            <strong>Telefon</strong>
-                            555 555 55 55
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-12 mb-5 mb-lg-0 text-center">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-mobile"></i>
-                        </div>
-                        <div class="contact-content">
-                            <strong>GSM</strong>
-                            555 555 55 55
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-12 mb-5 mb-lg-0 text-center">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-content">
-                            <strong>Email</strong>
-                            info@sinekasineklik.com
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row w-100 mt-4">
-                <div class="col-12 text-center py-3 w-100">
-                    <h3>Bize Yazın</h3>
-                </div>
-                <form id="contact-form" class=" w-100" action="#">
-                    <div class="row">
-                        <div class="col-lg-4 col-12 mb-4">
-                            <input type="text" placeholder="Adınız Soyadınız">
-                        </div>
-                        <div class="col-lg-4 col-12 mb-4">
-                            <input type="text" placeholder="Telefonunuz">
-                        </div>
-                        <div class="col-lg-4 col-12 mb-4">
-                            <input type="text" placeholder="Emailiniz">
-                        </div>
-                        <div class="col-12 col-12 mb-4">
-                            <textarea placeholder="Mesajınız"></textarea>
-                        </div>
-                        <div class="col-lg-4 col-12 mb-4 offset-lg-4 text-center">
-                            <input type="submit" value="Gönder">
-                        </div>
-                    </div>
-                </form>
             </div>
         </div>
-        <div id="map" style="width: 100%; height: 600px;"></div>
     </section>
-
-
 
     <footer class="mt-5 py-5">
         <div class="container">
@@ -267,38 +243,8 @@
         </div>
     </section>
 
-    <script src="http://maps.google.com/maps/api/js?key=AIzaSyB5Ft8M304nbdALRRKQQnnHPsw_qxWG_ro" type="text/javascript"></script>
     <script type="text/javascript" src="assets/js/swiper.min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
-    <script type="text/javascript">
-        var locations = [
-            ['Sineka Sineklik', 41.0189167, 29.1263063, 4]
-        ];
-
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 18,
-            center: new google.maps.LatLng(41.0189167, 29.1263063),
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        });
-
-        var infowindow = new google.maps.InfoWindow();
-
-        var marker, i;
-
-        for (i = 0; i < locations.length; i++) {
-            marker = new google.maps.Marker({
-                position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-                map: map
-            });
-
-            google.maps.event.addListener(marker, 'click', (function (marker, i) {
-                return function () {
-                    infowindow.setContent(locations[i][0]);
-                    infowindow.open(map, marker);
-                }
-            })(marker, i));
-        }
-    </script>
 </body>
 
 </html>

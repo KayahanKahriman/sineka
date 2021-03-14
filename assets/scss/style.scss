@@ -336,12 +336,14 @@ footer {
 form {
   background: #f9f9f9;
   padding: 15px;
-  input:not([type="submit"]),
+
+  input:not([type="submit"], [type="checkbox"], [type="radio"]),
   textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #00000010;
   }
+
   [type="submit"] {
     background: $primary-color;
     color: #fff;
@@ -351,6 +353,38 @@ form {
 
     &:hover {
       background: $text-color;
+    }
+  }
+}
+
+.styled-checkbox {
+  input {
+    display: none;
+
+    &:checked + label::before {
+      content: "✔";
+      background: $primary-color;
+    }
+  }
+
+  label {
+    position: relative;
+    padding-left: 25px;
+
+    &:before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      background: gray;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
     }
   }
 }
@@ -367,11 +401,20 @@ form {
     margin: 20px auto;
     font-size: 22px;
   }
+
   .contact-content {
     strong {
       width: 100%;
       display: inline-block;
+      height: 50px;
     }
+  }
+}
+
+#login-form {
+  form {
+    background: transparent;
+    padding: 0;
   }
 }
 
