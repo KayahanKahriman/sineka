@@ -326,6 +326,43 @@ footer {
   }
 }
 
+#contact-form {
+  background: #f9f9f9;
+  padding: 15px;
+  input:not([type="submit"]),
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #00000010;
+  }
+  [type="submit"] {
+    background: $primary-color;
+    color: #fff;
+    padding: 15px 30px;
+    border: 0;
+  }
+}
+
+.contact-item {
+  .contact-icon {
+    background: $primary-color;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    font-size: 22px;
+  }
+  .contact-content {
+    strong {
+      width: 100%;
+      display: inline-block;
+    }
+  }
+}
+
 /*------------------------------------*\
     RESPONSIVE
 \*------------------------------------*/
