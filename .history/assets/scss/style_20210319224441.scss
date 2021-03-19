@@ -314,12 +314,11 @@ footer {
 
 .add-to-cart-form {
   .product-textures {
-    column-gap: 15px;
+    column-gap: 10px;
     a {
-      width: 60px;
-      height: 60px;
+      width: 40px;
+      height: 40px;
       display: inline-block;
-      margin-bottom: 15px;
 
       img {
         object-fit: cover;
@@ -340,16 +339,15 @@ footer {
   }
 
   .calculated-price {
-    background: #f9f9f9;
-    padding: 10px 15px;
-    border-radius: 5px;
-    margin-bottom: 0;
+    font-size: 22px;
+    margin-top: 15px;
   }
+}
 
-  .product-textures {
-    background: #f9f9f9;
-    padding: 15px;
-  }
+.attrs {
+  background: #ececee;
+  padding: 15px;
+  border-radius: 5px;
 }
 
 form {

@@ -270,7 +270,6 @@ footer {
     border-bottom: 2px solid #000;
     background: transparent;
     padding: 0;
-
     [type="text"] {
       background: transparent;
       padding: 15px 0;
@@ -313,21 +312,10 @@ footer {
 }
 
 .add-to-cart-form {
-  .product-textures {
-    column-gap: 15px;
-    a {
-      width: 60px;
-      height: 60px;
-      display: inline-block;
-      margin-bottom: 15px;
-
-      img {
-        object-fit: cover;
-        object-position: center center;
-        width: 100%;
-        height: 100%;
-      }
-    }
+  [type="text"] {
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid #00000020;
   }
 
   [type="submit"] {
@@ -340,16 +328,15 @@ footer {
   }
 
   .calculated-price {
-    background: #f9f9f9;
-    padding: 10px 15px;
-    border-radius: 5px;
-    margin-bottom: 0;
+    font-size: 22px;
+    margin-top: 15px;
   }
+}
 
-  .product-textures {
-    background: #f9f9f9;
-    padding: 15px;
-  }
+.attrs {
+  background: #ececee;
+  padding: 15px;
+  border-radius: 5px;
 }
 
 form {

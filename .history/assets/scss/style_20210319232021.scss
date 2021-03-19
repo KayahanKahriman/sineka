@@ -319,7 +319,7 @@ footer {
       width: 60px;
       height: 60px;
       display: inline-block;
-      margin-bottom: 15px;
+      margin-top: 15px;
 
       img {
         object-fit: cover;
@@ -340,16 +340,18 @@ footer {
   }
 
   .calculated-price {
-    background: #f9f9f9;
-    padding: 10px 15px;
-    border-radius: 5px;
-    margin-bottom: 0;
+    font-size: 22px;
+    margin-top: 15px;
   }
 
   .product-textures {
     background: #f9f9f9;
-    padding: 15px;
   }
+}
+
+.attrs {
+  padding: 15px;
+  border-radius: 5px;
 }
 
 form {
