@@ -15,7 +15,7 @@ var swiper = new Swiper(".swiper-container", {
 
 var swiper = new Swiper(".product-gallery", {
   slidesPerView: 1,
-  spaceBetween: 0,
+  spaceBetween: 30,
   loop: true,
   pagination: {
     el: ".swiper-pagination",

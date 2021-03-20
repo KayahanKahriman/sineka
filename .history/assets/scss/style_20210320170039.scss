@@ -331,7 +331,7 @@ footer {
 }
 
 .product-detail-gallery {
-  height: 500px;
+  max-height: 500px;
 
   img {
     object-fit: contain;
