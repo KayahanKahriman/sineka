@@ -22,9 +22,6 @@
         <a class="mobile-search-button toggle-search" href="#">
             <img src="./assets/images/search.svg" alt="">
         </a>
-        <a class="mobile-user-button" href="#">
-            <img src="./assets/images/user.svg" alt="">
-        </a>
         <a class="mobile-cart-button" href="#">
             <img src="./assets/images/cart.svg" alt="">
             <em>3</em>
@@ -102,18 +99,73 @@
 
     <section class="content-wrapper">
         <div class="container my-5">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                    <img src="./assets/images/corporate.jpg" class="img-cover" alt="" />
-                </div>
-                <div class="col-lg-6 col-12">
-                    <div class="section-title">
-                        <p class="sup-title">Lorem Ipsum Dolor</p>
-                        <h2>Yılların getirdiği <span>Tecrübeyle çalışıyoruz</span></h2>
+            <div class="row">
+                <div class="col-lg-9 col-12">
+                    <div class="cart-wrapper">
+                        <div class="cart-header">
+                            <div></div>
+                            <div>Ürün</div>
+                            <div>Fiyat</div>
+                            <div>Adet</div>
+                            <div>Toplam</div>
+                        </div>
+                        <div class="cart-body">
+                            <div class="cart-body-row">
+                                <div class="cart-product-img">
+                                    <img src="./assets/images/product-thumb.jpg" alt="">
+                                </div>
+                                <div class="cart-product-name">
+                                    <p class="mb-0">Plise sineklik</p>
+                                    <a class="remove" href="#">Sil</a>
+                                </div>
+                                <div class="cart-product-price">14 TL</div>
+                                <div class="cart-product-quantity">
+                                    <input type="text" class="quantity-input">
+                                </div>
+                                <div class="cart-product-total">45 TL</div>
+                            </div>
+                            <div class="cart-body-row">
+                                <div class="cart-product-img">
+                                    <img src="./assets/images/product-thumb.jpg" alt="">
+                                </div>
+                                <div class="cart-product-name">
+                                    <p class="mb-0">Plise sineklik</p>
+                                    <a class="remove" href="#">Sil</a>
+                                </div>
+                                <div class="cart-product-price">14 TL</div>
+                                <div class="cart-product-quantity">
+                                    <input type="text" class="quantity-input">
+                                </div>
+                                <div class="cart-product-total">45 TL</div>
+                            </div>
+                        </div>
                     </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula lectus eget massa dictum, et bibendum odio lobortis. Praesent porttitor, libero eget aliquet viverra, quam leo aliquam leo, et accumsan diam tellus vel elit. Integer ultrices sollicitudin arcu a pretium. Pellentesque in vehicula urna.
-                    </p>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <div class="total-wrapper">
+                        <div>
+                            <strong>Alt Toplam</strong>
+                            <div class="subtotal-item">
+                                <span>Plise Sineklik</span>
+                                <span>14 TL</span>
+                            </div>
+                            <div class="subtotal-item">
+                                <span>Plise Sineklik</span>
+                                <span>14 TL</span>
+                            </div>
+                        </div>
+                        <div>
+                            <strong>Kargo</strong>
+                            <span>Ücretsiz</span>
+                        </div>
+                        <div>
+                            <strong>Toplam</strong>
+                            <span class="total-price">39 TL</span>
+                        </div>
+                        <div class="text-center">
+                            <a class="payment-button" href="#">Ödeme Yap</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

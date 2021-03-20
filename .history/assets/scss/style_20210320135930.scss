@@ -33,12 +33,13 @@
 }
 
 .menu {
-  background: #f9f9f9;
+  background: #fff;
   position: relative;
   z-index: 3;
 }
 
 nav {
+  background: #fff;
   height: 60px;
   position: relative;
   z-index: 3;
@@ -109,23 +110,13 @@ nav {
   }
 }
 
-.header-buttons {
-  column-gap: 20px;
-
-  div {
-    column-gap: 10px;
-  }
-  a {
-    transition: all 0.3s linear;
-
-    &:hover {
-      color: $primary-color;
-    }
-  }
+#search-form {
+  border: 0;
 }
 
 .cart-button {
   position: relative;
+  margin: 0 20px;
   em {
     border-radius: 50%;
     font-size: 11px;

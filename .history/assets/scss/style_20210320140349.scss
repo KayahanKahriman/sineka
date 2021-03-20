@@ -109,23 +109,9 @@ nav {
   }
 }
 
-.header-buttons {
-  column-gap: 20px;
-
-  div {
-    column-gap: 10px;
-  }
-  a {
-    transition: all 0.3s linear;
-
-    &:hover {
-      color: $primary-color;
-    }
-  }
-}
-
 .cart-button {
   position: relative;
+  margin: 0 20px;
   em {
     border-radius: 50%;
     font-size: 11px;

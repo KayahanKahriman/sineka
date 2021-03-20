@@ -32,16 +32,12 @@
   }
 }
 
-.menu {
-  background: #f9f9f9;
-  position: relative;
-  z-index: 3;
-}
-
 nav {
+  background: #fff;
   height: 60px;
   position: relative;
   z-index: 3;
+  border: 1px solid #00000020;
 
   > ul {
     list-style: none;
@@ -70,6 +66,7 @@ nav {
         padding: 18px 15px;
         font-weight: 500;
         transition: all 0.3s linear;
+        border-right: 1px solid #00000010;
       }
     }
   }
@@ -103,29 +100,16 @@ nav {
   }
 }
 
-.search-form {
-  input {
-    border: 0;
-  }
+.slider {
+  margin-top: var(--slider-margin-top);
 }
 
-.header-buttons {
-  column-gap: 20px;
-
-  div {
-    column-gap: 10px;
-  }
-  a {
-    transition: all 0.3s linear;
-
-    &:hover {
-      color: $primary-color;
-    }
-  }
+.search-form {
 }
 
 .cart-button {
   position: relative;
+  margin: 0 20px;
   em {
     border-radius: 50%;
     font-size: 11px;
@@ -329,6 +313,11 @@ footer {
 }
 
 .add-to-cart-form {
+  .note {
+    background: #ffff00;
+    padding: 15px;
+    border-radius: 5px;
+  }
   .product-textures {
     column-gap: 15px;
     a {
@@ -391,27 +380,6 @@ form {
       background: $text-color;
     }
   }
-}
-
-.note {
-  background: #c3eeff;
-  padding: 15px;
-  border-radius: 5px;
-  margin-bottom: 15px;
-  border-left: 5px solid #669fb6;
-  font-size: 13px;
-
-  p:last-of-type {
-    margin-bottom: 0;
-  }
-}
-.warning {
-  background: #f6f794;
-  padding: 15px;
-  border-radius: 5px;
-  margin-bottom: 15px;
-  font-size: 13px;
-  border-left: 5px solid #b4b662;
 }
 
 .styled-checkbox {
@@ -583,6 +551,9 @@ form {
 \*------------------------------------*/
 
 @media only screen and (min-width: 320px) {
+  :root {
+    --slider-margin-top: 20px;
+  }
 }
 
 @media only screen and (min-width: 480px) {
@@ -592,6 +563,9 @@ form {
 }
 
 @media only screen and (min-width: 1024px) {
+  :root {
+    --slider-margin-top: -220px;
+  }
 }
 
 @media only screen and (min-width: 1140px) {

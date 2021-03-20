@@ -22,9 +22,6 @@
         <a class="mobile-search-button toggle-search" href="#">
             <img src="./assets/images/search.svg" alt="">
         </a>
-        <a class="mobile-user-button" href="#">
-            <img src="./assets/images/user.svg" alt="">
-        </a>
         <a class="mobile-cart-button" href="#">
             <img src="./assets/images/cart.svg" alt="">
             <em>3</em>
@@ -75,7 +72,7 @@
                             <li><a href="iletisim"> İletişim </a></li>
                         </ul>
 
-                        <div class="d-flex header-buttons">
+                        <div>
                             <a class="search-button toggle-search" href="#">
                                 <img src="./assets/images/search.svg" alt="">
                             </a>
@@ -83,16 +80,10 @@
                                 <img src="./assets/images/cart.svg" alt="">
                                 <em>3</em>
                             </a>
-                            <div class="login-register-button d-flex">
-                                <svg fill="#444444" width="20" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                    <path d="M256,0c-74.439,0-135,60.561-135,135s60.561,135,135,135s135-60.561,135-135S330.439,0,256,0z" />
-                                    <path d="M423.966,358.195C387.006,320.667,338.009,300,286,300h-60c-52.008,0-101.006,20.667-137.966,58.195
-                                            C51.255,395.539,31,444.833,31,497c0,8.284,6.716,15,15,15h420c8.284,0,15-6.716,15-15
-                                            C481,444.833,460.745,395.539,423.966,358.195z" />
-                                </svg>
-                                <a href="#">Giriş Yap</a>
-                                <a href="#">Üye Ol</a>
-                            </div>
+                            <a href="#" class="header-phone">
+                                <img src="./assets/images/phone-click.svg" alt="">
+                                <span>0 216 123 45 67</span>
+                            </a>
                         </div>
                     </nav>
                 </div>
@@ -102,18 +93,73 @@
 
     <section class="content-wrapper">
         <div class="container my-5">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                    <img src="./assets/images/corporate.jpg" class="img-cover" alt="" />
-                </div>
-                <div class="col-lg-6 col-12">
-                    <div class="section-title">
-                        <p class="sup-title">Lorem Ipsum Dolor</p>
-                        <h2>Yılların getirdiği <span>Tecrübeyle çalışıyoruz</span></h2>
+            <div class="row">
+                <div class="col-lg-9 col-12">
+                    <div class="cart-wrapper">
+                        <div class="cart-header">
+                            <div></div>
+                            <div>Ürün</div>
+                            <div>Fiyat</div>
+                            <div>Adet</div>
+                            <div>Toplam</div>
+                        </div>
+                        <div class="cart-body">
+                            <div class="cart-body-row">
+                                <div class="cart-product-img">
+                                    <img src="./assets/images/product-thumb.jpg" alt="">
+                                </div>
+                                <div class="cart-product-name">
+                                    <p class="mb-0">Plise sineklik</p>
+                                    <a class="remove" href="#">Sil</a>
+                                </div>
+                                <div class="cart-product-price">14 TL</div>
+                                <div class="cart-product-quantity">
+                                    <input type="text" class="quantity-input">
+                                </div>
+                                <div class="cart-product-total">45 TL</div>
+                            </div>
+                            <div class="cart-body-row">
+                                <div class="cart-product-img">
+                                    <img src="./assets/images/product-thumb.jpg" alt="">
+                                </div>
+                                <div class="cart-product-name">
+                                    <p class="mb-0">Plise sineklik</p>
+                                    <a class="remove" href="#">Sil</a>
+                                </div>
+                                <div class="cart-product-price">14 TL</div>
+                                <div class="cart-product-quantity">
+                                    <input type="text" class="quantity-input">
+                                </div>
+                                <div class="cart-product-total">45 TL</div>
+                            </div>
+                        </div>
                     </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula lectus eget massa dictum, et bibendum odio lobortis. Praesent porttitor, libero eget aliquet viverra, quam leo aliquam leo, et accumsan diam tellus vel elit. Integer ultrices sollicitudin arcu a pretium. Pellentesque in vehicula urna.
-                    </p>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <div class="total-wrapper">
+                        <div>
+                            <strong>Alt Toplam</strong>
+                            <div class="subtotal-item">
+                                <span>Plise Sineklik</span>
+                                <span>14 TL</span>
+                            </div>
+                            <div class="subtotal-item">
+                                <span>Plise Sineklik</span>
+                                <span>14 TL</span>
+                            </div>
+                        </div>
+                        <div>
+                            <strong>Kargo</strong>
+                            <span>Ücretsiz</span>
+                        </div>
+                        <div>
+                            <strong>Toplam</strong>
+                            <span class="total-price">39 TL</span>
+                        </div>
+                        <div class="text-center">
+                            <a class="payment-button" href="#">Ödeme Yap</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

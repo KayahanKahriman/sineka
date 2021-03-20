@@ -115,13 +115,6 @@ nav {
   div {
     column-gap: 10px;
   }
-  a {
-    transition: all 0.3s linear;
-
-    &:hover {
-      color: $primary-color;
-    }
-  }
 }
 
 .cart-button {

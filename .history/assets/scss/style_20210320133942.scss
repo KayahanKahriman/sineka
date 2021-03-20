@@ -33,12 +33,13 @@
 }
 
 .menu {
-  background: #f9f9f9;
+  background: #fff;
   position: relative;
   z-index: 3;
 }
 
 nav {
+  background: #fff;
   height: 60px;
   position: relative;
   z-index: 3;
@@ -104,28 +105,11 @@ nav {
 }
 
 .search-form {
-  input {
-    border: 0;
-  }
-}
-
-.header-buttons {
-  column-gap: 20px;
-
-  div {
-    column-gap: 10px;
-  }
-  a {
-    transition: all 0.3s linear;
-
-    &:hover {
-      color: $primary-color;
-    }
-  }
 }
 
 .cart-button {
   position: relative;
+  margin: 0 20px;
   em {
     border-radius: 50%;
     font-size: 11px;
@@ -583,6 +567,8 @@ form {
 \*------------------------------------*/
 
 @media only screen and (min-width: 320px) {
+  :root {
+  }
 }
 
 @media only screen and (min-width: 480px) {
@@ -592,6 +578,8 @@ form {
 }
 
 @media only screen and (min-width: 1024px) {
+  :root {
+  }
 }
 
 @media only screen and (min-width: 1140px) {

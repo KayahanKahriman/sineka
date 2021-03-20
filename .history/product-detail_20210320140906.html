@@ -22,9 +22,6 @@
         <a class="mobile-search-button toggle-search" href="#">
             <img src="./assets/images/search.svg" alt="">
         </a>
-        <a class="mobile-user-button" href="#">
-            <img src="./assets/images/user.svg" alt="">
-        </a>
         <a class="mobile-cart-button" href="#">
             <img src="./assets/images/cart.svg" alt="">
             <em>3</em>
@@ -32,8 +29,8 @@
     </section>
 
     <section class="desktop-header d-none d-lg-block">
-        <div class="container ">
-            <header class="header p-3">
+        <header class="header p-3">
+            <div class="container">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-lg-3 col-12">
                         <a href="#">
@@ -53,8 +50,8 @@
                         </div>
                     </div>
                 </div>
-            </header>
-        </div>
+            </div>
+        </header>
     </section>
 
     <section class="menu d-none d-lg-block">
@@ -84,7 +81,7 @@
                                 <em>3</em>
                             </a>
                             <div class="login-register-button d-flex">
-                                <svg fill="#444444" width="20" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <svg width="20" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                                     <path d="M256,0c-74.439,0-135,60.561-135,135s60.561,135,135,135s135-60.561,135-135S330.439,0,256,0z" />
                                     <path d="M423.966,358.195C387.006,320.667,338.009,300,286,300h-60c-52.008,0-101.006,20.667-137.966,58.195
                                             C51.255,395.539,31,444.833,31,497c0,8.284,6.716,15,15,15h420c8.284,0,15-6.716,15-15
@@ -102,18 +99,101 @@
 
     <section class="content-wrapper">
         <div class="container my-5">
-            <div class="row align-items-center">
+            <div class="row align-items-start">
                 <div class="col-lg-6 col-12 mb-5 mb-lg-0">
                     <img src="./assets/images/corporate.jpg" class="img-cover" alt="" />
+
                 </div>
                 <div class="col-lg-6 col-12">
                     <div class="section-title">
-                        <p class="sup-title">Lorem Ipsum Dolor</p>
-                        <h2>Yılların getirdiği <span>Tecrübeyle çalışıyoruz</span></h2>
+                        <h1><span>Plise Sineklik</span></h1>
                     </div>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula lectus eget massa dictum, et bibendum odio lobortis. Praesent porttitor, libero eget aliquet viverra, quam leo aliquam leo, et accumsan diam tellus vel elit. Integer ultrices sollicitudin arcu a pretium. Pellentesque in vehicula urna.
                     </p>
+
+                    <div class="note mt-4">
+                        <p>Kapı Sineklik Ölçü (Min./Mak.)</p>
+                        <p>Genişlik:40cm-150cm</p>
+                        <p>Yükseklik:160cm-260cm</p>
+                    </div>
+                    <div class="warning">
+                        Ölçü alırken kapının/pencerenin kasasını içten içe ölçünüz. Çerçeve kalınlığı; Slim için +5cm, Gold için +8cm en ve boya ilave ediniz. Ayrıntı bilgi için aşağıdaki Ölçü Nasıl Alınır? bölümüne bakınız.
+                    </div>
+                    <div class="add-to-cart-form">
+                        <form action="#">
+                            <div class="attrs">
+                                <div class="row align-items-end">
+                                    <div class="col-12 mb-4">
+                                        <div class="product-textures d-flex flex-wrap justify-content-start">
+                                            <a data-fancybox="images" href="./assets/images/corporate.jpg">
+                                                <img src="./assets/images/corporate.jpg" alt="">
+                                            </a>
+                                            <a data-fancybox="images" href="./assets/images/corporate.jpg">
+                                                <img src="./assets/images/corporate.jpg" alt="">
+                                            </a>
+                                            <a data-fancybox="images" href="./assets/images/corporate.jpg">
+                                                <img src="./assets/images/corporate.jpg" alt="">
+                                            </a>
+                                            <a data-fancybox="images" href="./assets/images/corporate.jpg">
+                                                <img src="./assets/images/corporate.jpg" alt="">
+                                            </a>
+                                            <a data-fancybox="images" href="./assets/images/corporate.jpg">
+                                                <img src="./assets/images/corporate.jpg" alt="">
+                                            </a>
+                                            <a data-fancybox="images" href="./assets/images/corporate.jpg">
+                                                <img src="./assets/images/corporate.jpg" alt="">
+                                            </a>
+                                            <a data-fancybox="images" href="./assets/images/corporate.jpg">
+                                                <img src="./assets/images/corporate.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-12">
+                                        <label for="genislik">Genişlik</label>
+                                        <input type="number" id="genislik">
+                                    </div>
+                                    <div class="col-lg-3 col-12">
+                                        <label for="yukseklik">Yükseklik</label>
+                                        <input type="number" id="yukseklik">
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <label for="yukseklik">Renk</label>
+                                        <div class="styled-select">
+                                            <select name="color" id="color">
+                                                <option value="Beyaz">Beyaz</option>
+                                                <option value="Kırmızı">Kırmızı</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4 align-items-end">
+                                <div class="col-lg-4 col-12">
+                                    <label for="#">Adet</label>
+                                    <input type="number">
+                                </div>
+                                <div class="col-lg-3 col-12">
+                                    <label for="#">Toplam</label>
+                                    <p class="calculated-price">340 TL</p>
+                                </div>
+                                <div class="col-lg-5 col-12">
+                                    <label for=""></label>
+                                    <input type="submit" value="Sepete Ekle">
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="product-content">
+                        <h3>Ürün Açıklaması</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id sapien facilisis, placerat mauris eu, rutrum dui. Nullam metus nisi, euismod sit amet nisl quis, congue dictum justo. Nulla ullamcorper a dolor a vestibulum. Fusce ullamcorper risus quis ullamcorper ornare. Nulla leo ligula, condimentum vel nibh eget, rhoncus congue risus. Aliquam rutrum sit amet felis quis venenatis. Proin non nisi quis lacus iaculis lobortis at at arcu. Fusce nec metus at nisi luctus ultrices vel et mauris. Phasellus bibendum odio ut magna viverra tincidunt. Etiam nec lectus in arcu vulputate mollis non et mauris. Donec eu metus sit amet lacus congue vehicula non accumsan ipsum. Aenean iaculis ipsum sed egestas posuere. Nam varius eros eget lectus pellentesque tincidunt. Pellentesque augue leo, tincidunt nec arcu facilisis, maximus vestibulum odio. Sed auctor quam eget justo egestas pharetra.</p>
+                        <p>Ut auctor suscipit viverra. Sed libero odio, mattis vitae velit quis, commodo auctor massa. Morbi ac nisi sit amet ex sollicitudin bibendum. Ut justo elit, aliquet a suscipit in, lobortis vitae mauris. Nulla fringilla placerat neque, vitae gravida massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla venenatis lacus nibh, vitae hendrerit lectus fermentum eu. Curabitur at fermentum diam. Integer aliquet mauris in lacus rhoncus semper. Pellentesque ac convallis eros. Proin sollicitudin ipsum quam, sed luctus ante feugiat ut.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -211,7 +291,9 @@
         </div>
     </section>
 
+    <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="assets/js/swiper.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.fancybox.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 

@@ -22,9 +22,6 @@
         <a class="mobile-search-button toggle-search" href="#">
             <img src="./assets/images/search.svg" alt="">
         </a>
-        <a class="mobile-user-button" href="#">
-            <img src="./assets/images/user.svg" alt="">
-        </a>
         <a class="mobile-cart-button" href="#">
             <img src="./assets/images/cart.svg" alt="">
             <em>3</em>
@@ -102,18 +99,59 @@
 
     <section class="content-wrapper">
         <div class="container my-5">
-            <div class="row align-items-center">
+            <div class="row">
+
                 <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                    <img src="./assets/images/corporate.jpg" class="img-cover" alt="" />
-                </div>
-                <div class="col-lg-6 col-12">
-                    <div class="section-title">
-                        <p class="sup-title">Lorem Ipsum Dolor</p>
-                        <h2>Yılların getirdiği <span>Tecrübeyle çalışıyoruz</span></h2>
+                    <strong class="mb-2 d-inline-block">Giriş Yap</strong>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque libero metus</p>
+                    <div id="login-form">
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <input type="text" placeholder="Kullanıcı Adınız">
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <input type="password" placeholder="Şifreniz">
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 col-12 text-left">
+                                    <div class="styled-checkbox">
+                                        <input id="remember-me" type="checkbox">
+                                        <label for="remember-me">Beni Hatırla</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 text-right">
+                                    <input type="submit" value="Giriş Yap">
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula lectus eget massa dictum, et bibendum odio lobortis. Praesent porttitor, libero eget aliquet viverra, quam leo aliquam leo, et accumsan diam tellus vel elit. Integer ultrices sollicitudin arcu a pretium. Pellentesque in vehicula urna.
-                    </p>
+                </div>
+                <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                    <strong class="mb-2 d-inline-block">Üye Ol</strong>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque libero metus</p>
+                    <div id="register-form">
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <input type="text" placeholder="Adınız Soyadınız">
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <input type="email" placeholder="Emailiniz">
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <input type="text" placeholder="Kullanıcı Adınız">
+                                </div>
+                                <div class="col-lg-6 col-12 mb-4">
+                                    <input type="password" placeholder="Şifreniz">
+                                </div>
+                                <div class="col-12 text-right">
+                                    <input type="submit" value="Üye Ol">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
