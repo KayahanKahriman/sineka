@@ -283,11 +283,9 @@ footer {
   transition: all 0.2s linear;
 
   form {
+    border-bottom: 2px solid #000;
     background: transparent;
     padding: 0;
-    border: 0;
-    border-radius: 0;
-    border-bottom: 2px solid #000;
 
     [type="text"] {
       background: transparent;
@@ -373,7 +371,6 @@ footer {
 form {
   padding: 15px;
   border-radius: 5px;
-  border: 1px solid #ececee;
 
   input:not([type="submit"], [type="checkbox"], [type="radio"]),
   textarea {
@@ -479,12 +476,10 @@ form {
   }
 }
 
-#login-form,
-#register-form {
+#login-form {
   form {
     background: transparent;
     padding: 0;
-    border: 0;
   }
 }
 

@@ -283,11 +283,11 @@ footer {
   transition: all 0.2s linear;
 
   form {
+    border-bottom: 2px solid #000;
     background: transparent;
     padding: 0;
     border: 0;
     border-radius: 0;
-    border-bottom: 2px solid #000;
 
     [type="text"] {
       background: transparent;
@@ -479,12 +479,10 @@ form {
   }
 }
 
-#login-form,
-#register-form {
+#login-form {
   form {
     background: transparent;
     padding: 0;
-    border: 0;
   }
 }
 
