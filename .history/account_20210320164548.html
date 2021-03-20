@@ -6,6 +6,7 @@
     <meta charset="utf-8" />
     <title>Başlık</title>
     <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/responsive-tabs.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body>
@@ -32,8 +33,8 @@
     </section>
 
     <section class="desktop-header d-none d-lg-block">
-        <header class="header p-3">
-            <div class="container">
+        <div class="container ">
+            <header class="header p-3">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-lg-3 col-12">
                         <a href="#">
@@ -53,8 +54,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
+            </header>
+        </div>
     </section>
 
     <section class="menu d-none d-lg-block">
@@ -103,61 +104,109 @@
     <section class="content-wrapper">
         <div class="container my-5">
             <div class="row">
+                <div class="col-12">
+                    <div id="responsiveTabsDemo">
+                        <ul class="mb-5">
+                            <li><a href="#tab-1"> Hesap Bilgilerim </a></li>
+                            <li><a href="#tab-2"> Adres Bilgilerim </a></li>
+                            <li><a href="#tab-3"> Sipariş Bilgilerim </a></li>
+                        </ul>
 
-                <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                    <strong class="mb-2 d-inline-block">Giriş Yap</strong>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque libero metus</p>
-                    <div id="login-form">
-                        <form action="#">
-                            <div class="row">
-                                <div class="col-lg-6 col-12 mb-4">
-                                    <input type="text" placeholder="Kullanıcı Adınız">
-                                </div>
-                                <div class="col-lg-6 col-12 mb-4">
-                                    <input type="password" placeholder="Şifreniz">
-                                </div>
-                            </div>
-                            <div class="row align-items-center">
-                                <div class="col-lg-6 col-12 text-left">
-                                    <div class="styled-checkbox">
-                                        <input id="remember-me" type="checkbox">
-                                        <label for="remember-me">Beni Hatırla</label>
+                        <div id="tab-1">
+                            <h2>Hesap Bilgilerim</h2>
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-lg-4 col-12 mb-4">
+                                        <input type="text" placeholder="Adınız Soyadınız">
+                                    </div>
+                                    <div class="col-lg-4 col-12 mb-4">
+                                        <input type="text" placeholder="Telefonunuz">
+                                    </div>
+                                    <div class="col-lg-4 col-12 mb-4">
+                                        <input type="text" placeholder="Emailiniz">
+                                    </div>
+                                    <div class="col-12">
+                                        <h4>Şifre Değiştirme</h4>
+                                    </div>
+                                    <div class="col-lg-6 col-12 mb-4">
+                                        <input type="password" placeholder="Şifreniz">
+                                    </div>
+                                    <div class="col-lg-6 col-12 mb-4">
+                                        <input type="password" placeholder="Şifreniz (Tekrar)">
+                                    </div>
+                                    <div class="col-12 text-lg-right text-center">
+                                        <input type="submit" value="Kaydet">
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-12 text-right">
-                                    <input type="submit" value="Giriş Yap">
+                            </form>
+                        </div>
+
+                        <div id="tab-2">
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h4>Kargo Adresi</h4>
+                                    </div>
+                                    <div class="col-lg-6 col-12 mb-4">
+                                        <textarea name="adres" id="adres" cols="30" rows="10"></textarea>
+                                    </div>
+                                    <div class="col-lg-6 col-12 mb-4">
+                                        <input type="password" placeholder="Şifreniz (Tekrar)">
+                                    </div>
+                                    <div class="col-12 text-lg-right text-center">
+                                        <input type="submit" value="Kaydet">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div id="tab-3">
+                            <h2>Sipariş Geçmişim</h2>
+                            <div class="order-table-wrapper">
+                                <div class="order-table-header">
+                                    <div></div>
+                                    <div>Ürün</div>
+                                    <div>Fiyat</div>
+                                    <div>Adet</div>
+                                    <div>Toplam</div>
+                                    <div>Sipariş Tarihi</div>
+                                </div>
+                                <div class="order-table-body">
+                                    <div class="order-table-row">
+                                        <div class="order-table-product-img">
+                                            <img class="img-cover" src="./assets/images/product-thumb.jpg" alt="">
+                                        </div>
+                                        <div class="order-table-product-name">
+                                            <p class="mb-0">Plise sineklik</p>
+                                        </div>
+                                        <div class="order-table-product-price">14 TL</div>
+                                        <div class="order-table-product-quantity">
+                                            2
+                                        </div>
+                                        <div class="order-table-product-total">45 TL</div>
+                                        <div class="order-table-date">03.03.2021</div>
+                                    </div>
+                                    <div class="order-table-row">
+                                        <div class="order-table-product-img">
+                                            <img class="img-cover" src="./assets/images/product-thumb.jpg" alt="">
+                                        </div>
+                                        <div class="order-table-product-name">
+                                            <p class="mb-0">Plise sineklik</p>
+                                        </div>
+                                        <div class="order-table-product-price">14 TL</div>
+                                        <div class="order-table-product-quantity">
+                                            2
+                                        </div>
+                                        <div class="order-table-product-total">45 TL</div>
+                                        <div class="order-table-date">03.03.2021</div>
+                                    </div>
                                 </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                    <strong class="mb-2 d-inline-block">Üye Ol</strong>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque libero metus</p>
-                    <div id="register-form">
-                        <form action="#">
-                            <div class="row">
-                                <div class="col-lg-6 col-12 mb-4">
-                                    <input type="text" placeholder="Adınız Soyadınız">
-                                </div>
-                                <div class="col-lg-6 col-12 mb-4">
-                                    <input type="email" placeholder="Emailiniz">
-                                </div>
-                                <div class="col-lg-6 col-12 mb-4">
-                                    <input type="text" placeholder="Kullanıcı Adınız">
-                                </div>
-                                <div class="col-lg-6 col-12 mb-4">
-                                    <input type="password" placeholder="Şifreniz">
-                                </div>
-                                <div class="col-12 text-right">
-                                    <input type="submit" value="Üye Ol">
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+
                 </div>
             </div>
-        </div>
     </section>
 
     <footer class="mt-5 py-5">
@@ -252,8 +301,15 @@
         </div>
     </section>
 
+    <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="assets/js/swiper.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.responsiveTabs.min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+        $('#responsiveTabsDemo').responsiveTabs({
+            startCollapsed: 'accordion'
+        });
+    </script>
 </body>
 
 </html>

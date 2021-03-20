@@ -583,39 +583,7 @@ form {
   }
 }
 
-.order-table-header,
-.order-table-row {
-  display: grid;
-  grid-template-columns: 80px 250px 50px 50px 50px 100px;
-  justify-content: space-around;
-  align-items: center;
-  background: #f9f9f9;
-}
-
-.order-table-header {
-  background: #f1f1f1;
-  padding: 10px 0;
-  font-weight: 700;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.order-table-row {
-  padding: 10px 0;
-  border-bottom: 1px solid #ececec;
-
-  &:last-of-type {
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
-}
-
-.order-table-img {
-  img {
-    width: 100%;
-    object-fit: contain;
-    object-position: center center;
-  }
+.order-table {
 }
 /*------------------------------------*\
     RESPONSIVE

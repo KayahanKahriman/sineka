@@ -586,13 +586,13 @@ form {
 .order-table-header,
 .order-table-row {
   display: grid;
-  grid-template-columns: 80px 250px 50px 50px 50px 100px;
+  grid-template-columns: 80px 300px 50px 50px 50px;
   justify-content: space-around;
   align-items: center;
   background: #f9f9f9;
 }
 
-.order-table-header {
+.cart-header {
   background: #f1f1f1;
   padding: 10px 0;
   font-weight: 700;
@@ -600,7 +600,7 @@ form {
   border-top-right-radius: 5px;
 }
 
-.order-table-row {
+.cart-body-row {
   padding: 10px 0;
   border-bottom: 1px solid #ececec;
 
@@ -608,9 +608,16 @@ form {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
   }
+
+  .quantity-input {
+    width: 100%;
+    border: 1px solid #cecece;
+    padding: 5px;
+    border-radius: 5px;
+  }
 }
 
-.order-table-img {
+.cart-product-img {
   img {
     width: 100%;
     object-fit: contain;

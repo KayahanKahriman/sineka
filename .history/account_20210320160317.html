@@ -32,8 +32,8 @@
     </section>
 
     <section class="desktop-header d-none d-lg-block">
-        <header class="header p-3">
-            <div class="container">
+        <div class="container ">
+            <header class="header p-3">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-lg-3 col-12">
                         <a href="#">
@@ -53,8 +53,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
+            </header>
+        </div>
     </section>
 
     <section class="menu d-none d-lg-block">
@@ -103,57 +103,45 @@
     <section class="content-wrapper">
         <div class="container my-5">
             <div class="row">
-
-                <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                    <strong class="mb-2 d-inline-block">Giriş Yap</strong>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque libero metus</p>
-                    <div id="login-form">
-                        <form action="#">
-                            <div class="row">
-                                <div class="col-lg-6 col-12 mb-4">
-                                    <input type="text" placeholder="Kullanıcı Adınız">
+                <div class="col-lg-9 col-12">
+                    <div class="cart-wrapper">
+                        <div class="cart-header">
+                            <div></div>
+                            <div>Ürün</div>
+                            <div>Fiyat</div>
+                            <div>Adet</div>
+                            <div>Toplam</div>
+                        </div>
+                        <div class="cart-body">
+                            <div class="cart-body-row">
+                                <div class="cart-product-img">
+                                    <img src="./assets/images/product-thumb.jpg" alt="">
                                 </div>
-                                <div class="col-lg-6 col-12 mb-4">
-                                    <input type="password" placeholder="Şifreniz">
+                                <div class="cart-product-name">
+                                    <p class="mb-0">Plise sineklik</p>
+                                    <a class="remove" href="#">Sil</a>
                                 </div>
+                                <div class="cart-product-price">14 TL</div>
+                                <div class="cart-product-quantity">
+                                    <input type="text" class="quantity-input">
+                                </div>
+                                <div class="cart-product-total">45 TL</div>
                             </div>
-                            <div class="row align-items-center">
-                                <div class="col-lg-6 col-12 text-left">
-                                    <div class="styled-checkbox">
-                                        <input id="remember-me" type="checkbox">
-                                        <label for="remember-me">Beni Hatırla</label>
-                                    </div>
+                            <div class="cart-body-row">
+                                <div class="cart-product-img">
+                                    <img src="./assets/images/product-thumb.jpg" alt="">
                                 </div>
-                                <div class="col-lg-6 col-12 text-right">
-                                    <input type="submit" value="Giriş Yap">
+                                <div class="cart-product-name">
+                                    <p class="mb-0">Plise sineklik</p>
+                                    <a class="remove" href="#">Sil</a>
                                 </div>
+                                <div class="cart-product-price">14 TL</div>
+                                <div class="cart-product-quantity">
+                                    <input type="text" class="quantity-input">
+                                </div>
+                                <div class="cart-product-total">45 TL</div>
                             </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                    <strong class="mb-2 d-inline-block">Üye Ol</strong>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque libero metus</p>
-                    <div id="register-form">
-                        <form action="#">
-                            <div class="row">
-                                <div class="col-lg-6 col-12 mb-4">
-                                    <input type="text" placeholder="Adınız Soyadınız">
-                                </div>
-                                <div class="col-lg-6 col-12 mb-4">
-                                    <input type="email" placeholder="Emailiniz">
-                                </div>
-                                <div class="col-lg-6 col-12 mb-4">
-                                    <input type="text" placeholder="Kullanıcı Adınız">
-                                </div>
-                                <div class="col-lg-6 col-12 mb-4">
-                                    <input type="password" placeholder="Şifreniz">
-                                </div>
-                                <div class="col-12 text-right">
-                                    <input type="submit" value="Üye Ol">
-                                </div>
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
