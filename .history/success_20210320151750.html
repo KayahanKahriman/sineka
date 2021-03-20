@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="utf-8" />
+    <title>Başlık</title>
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <section class="mobile-header d-flex d-lg-none">
+        <a id="toggle-nav" class="d-flex d-lg-none flex-column justify-content-around" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <a class="mobile-header-logo" href="#">
+            <img style="width: 120px;" src="./assets/images/logo.png" alt="" />
+        </a>
+        <a class="mobile-search-button toggle-search" href="#">
+            <img src="./assets/images/search.svg" alt="">
+        </a>
+        <a class="mobile-user-button" href="#">
+            <img src="./assets/images/user.svg" alt="">
+        </a>
+        <a class="mobile-cart-button" href="#">
+            <img src="./assets/images/cart.svg" alt="">
+            <em>3</em>
+        </a>
+    </section>
+
+    <section class="desktop-header d-none d-lg-block">
+        <div class="container ">
+            <header class="header p-3">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-3 col-12">
+                        <a href="#">
+                            <img width="150" src="./assets/images/logo.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-12 d-flex justify-content-end">
+                        <div class="header-contact-item mr-3">
+                            <span><img src="./assets/images/whatsapp.svg" alt="" /></span>
+                            <span>Whatsapp İletişim</span>
+                            <span>{{ whatsapp }}</span>
+                        </div>
+                        <div class="header-contact-item">
+                            <span><img src="./assets/images/phone.svg" alt="" /></span>
+                            <span>Email</span>
+                            <span>{{ email }}</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </section>
+
+    <section class="menu d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 w-100">
+                    <nav class="mt-0 w-100 d-flex align-items-center justify-content-between">
+                        <ul class="mb-0 p-0">
+                            <li><a href="#"> Anasayfa </a></li>
+                            <li><a href="hakkimizda"> Hakkımızda </a></li>
+                            <li><a href="#"> Ürünler </a>
+                                <ul>
+                                    <li><a href="#">Level 1</a></li>
+                                    <li><a href="#">Level 1</a></li>
+                                    <li><a href="#">Level 1</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="iletisim"> İletişim </a></li>
+                        </ul>
+
+                        <div class="d-flex header-buttons">
+                            <a class="search-button toggle-search" href="#">
+                                <img src="./assets/images/search.svg" alt="">
+                            </a>
+                            <a class="cart-button" href="#">
+                                <img src="./assets/images/cart.svg" alt="">
+                                <em>3</em>
+                            </a>
+                            <div class="login-register-button d-flex">
+                                <svg fill="#444444" width="20" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <path d="M256,0c-74.439,0-135,60.561-135,135s60.561,135,135,135s135-60.561,135-135S330.439,0,256,0z" />
+                                    <path d="M423.966,358.195C387.006,320.667,338.009,300,286,300h-60c-52.008,0-101.006,20.667-137.966,58.195
+                                            C51.255,395.539,31,444.833,31,497c0,8.284,6.716,15,15,15h420c8.284,0,15-6.716,15-15
+                                            C481,444.833,460.745,395.539,423.966,358.195z" />
+                                </svg>
+                                <a href="#">Giriş Yap</a>
+                                <a href="#">Üye Ol</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-wrapper">
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-12 col-lg-6 offset-lg-3 offset-0 mb-5 mb-lg-0 text-center">
+                    <img class="mb-4" src="./assets/images/check.svg" alt="">
+                    <h1>Ödeme Başarılı</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <a class="button mt-4" href="#">Anasayfa</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-5 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-12 mb-4">
+                    <h6 class="footer-title mb-4">
+                        <span class="footer-sup-title">Hakkımızda</span>
+                        <span class="footer-main-title">Sineka Sineklik Hakkında</span>
+                    </h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                        vehicula lectus eget massa dictum
+                    </p>
+                    <ul class="footer-contact p-0 list-unstyled">
+                        <li><a href="#">0 216 123 45 67</a></li>
+                        <li><a href="#">0 555 123 45 67</a></li>
+                        <li><a href="#">info@e-sinekasineklik.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-12 mb-4">
+                    <h6 class="footer-title mb-4">
+                        <span class="footer-sup-title">Hakkımızda</span>
+                        <span class="footer-main-title">Sineka Sineklik Hakkında</span>
+                    </h6>
+
+                    <ul class="footer-nav p-0 list-unstyled columns-2">
+                        <li><a href="#">Hesabım</a></li>
+                        <li><a href="#">Sepetim</a></li>
+                        <li><a href="#">İletişim</a></li>
+                        <li><a href="#">Gizlilik Politikası</a></li>
+                        <li><a href="#">İade Koşulları</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-12 mb-4">
+                    <h6 class="footer-title mb-4">
+                        <span class="footer-sup-title">Bizi Takip Edin</span>
+                        <span class="footer-main-title">Sosyal Medyada E-Sineka</span>
+                    </h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                        vehicula lectus eget massa dictum
+                    </p>
+                    <ul class="footer-contact p-0 list-unstyled d-flex">
+                        <li><a href="#"><i class="fab facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab twitter"></i></a></li>
+                        <li><a href="#"><i class="fab linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="footer-bottom">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-lg-6 col-12 text-lg-left text-center">
+                    © Copyright 2020 E-Sineka Sineklik - Her Hakkı Saklıdır
+                </div>
+                <div class="col-lg-6 col-12 text-lg-right text-center">
+                    logo
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mobile-nav">
+        <ul>
+            <li><a href="#">Anasayfa</a></li>
+            <li><a href="#">Hakkımızda</a></li>
+            <li>
+                <a href="#">Ürünler</a>
+                <ul>
+                    <li><a href="#">Level 1</a></li>
+                    <li><a href="#">Level 1</a></li>
+                    <li><a href="#">Level 1</a></li>
+                </ul>
+            </li>
+            <li><a href="#">İletişim</a></li>
+        </ul>
+    </section>
+
+    <section id="search-form-wrapper">
+        <div class="close-search-form">x</div>
+        <div id="search-form">
+            <form action="#" class="d-flex align-items-center">
+                <input type="text" placeholder="Aramak istediğiniz kelime">
+                <input type="image" src="./assets/images/right-arrow.svg">
+            </form>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="assets/js/swiper.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>
