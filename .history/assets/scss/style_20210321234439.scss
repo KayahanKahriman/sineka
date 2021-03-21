@@ -631,11 +631,12 @@ form {
 }
 
 .mobile-fixed {
-  background: $primary-color;
+  background: #111;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100vw;
+  height: 70px;
   display: flex;
   align-items: center;
   font-size: 12px;
@@ -650,7 +651,6 @@ form {
     justify-content: center;
     align-items: center;
     padding: 5px;
-    margin-bottom: 5px;
   }
   a {
     display: flex;
@@ -658,19 +658,7 @@ form {
     justify-content: center;
     align-items: center;
     color: #fff;
-    padding: 10px 0;
-    position: relative;
-
-    &:after {
-      content: "";
-      position: absolute;
-      width: 1px;
-      height: 100%;
-      right: -15px;
-      top: 0;
-      bottom: 0;
-      background: #ffffff20;
-    }
+    border-right: 1px solid #ffffff20;
 
     &:last-of-type {
       border: 0;

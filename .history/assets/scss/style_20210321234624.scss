@@ -631,7 +631,7 @@ form {
 }
 
 .mobile-fixed {
-  background: $primary-color;
+  background: #111;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -666,7 +666,7 @@ form {
       position: absolute;
       width: 1px;
       height: 100%;
-      right: -15px;
+      right: -10px;
       top: 0;
       bottom: 0;
       background: #ffffff20;
