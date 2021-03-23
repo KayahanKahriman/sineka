@@ -684,8 +684,7 @@ form {
     padding-bottom: 60px;
   }
 
-  .cart-wrapper,
-  .order-table-wrapper {
+  .cart-wrapper {
     overflow-x: scroll;
   }
 
@@ -695,7 +694,6 @@ form {
   .order-table-row {
     display: flex;
     width: 200%;
-    .order-table-product-img,
     .cart-product-img {
       img {
         width: 40px;
@@ -717,8 +715,7 @@ form {
   .footer-bottom {
     padding-bottom: 0;
   }
-  .cart-wrapper,
-  .order-table-wrapper {
+  .cart-wrapper {
     overflow-x: auto;
   }
 
@@ -729,7 +726,6 @@ form {
     display: grid;
     grid-template-columns: 80px 300px 50px 50px 50px;
     width: auto;
-    .order-table-product-img,
     .cart-product-img {
       img {
         width: 100%;

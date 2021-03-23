@@ -502,6 +502,7 @@ form {
 
 .cart-header,
 .cart-body-row {
+  display: grid;
   justify-content: space-around;
   align-items: center;
   background: #f9f9f9;
@@ -684,23 +685,9 @@ form {
     padding-bottom: 60px;
   }
 
-  .cart-wrapper,
-  .order-table-wrapper {
-    overflow-x: scroll;
-  }
-
   .cart-header,
-  .cart-body-row,
-  .order-table-header,
-  .order-table-row {
-    display: flex;
-    width: 200%;
-    .order-table-product-img,
-    .cart-product-img {
-      img {
-        width: 40px;
-      }
-    }
+  .cart-body-row {
+    grid-template-columns: 80px 300px 50px 50px 50px;
   }
 }
 
@@ -717,24 +704,13 @@ form {
   .footer-bottom {
     padding-bottom: 0;
   }
-  .cart-wrapper,
-  .order-table-wrapper {
+  .cart-wrapper {
     overflow-x: auto;
   }
 
   .cart-header,
-  .cart-body-row,
-  .order-table-header,
-  .order-table-row {
-    display: grid;
+  .cart-body-row {
     grid-template-columns: 80px 300px 50px 50px 50px;
-    width: auto;
-    .order-table-product-img,
-    .cart-product-img {
-      img {
-        width: 100%;
-      }
-    }
   }
 }
 
